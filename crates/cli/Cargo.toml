@@ -1,0 +1,23 @@
+[package]
+name = "zkpay"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "zkpay"
+path = "src/main.rs"
+
+[dependencies]
+crypto = { path = "../crypto" }
+protocol = { path = "../protocol" }
+p2p = { path = "../p2p" }
+relay = { path = "../relay" }
+tokio.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+serde.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+hex.workspace = true
+bs58.workspace = true
+dirs = "5.0"

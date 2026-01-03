@@ -1,0 +1,15 @@
+[package]
+name = "relay"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+protocol = { path = "../protocol" }
+crypto = { path = "../crypto" }
+tokio.workspace = true
+serde.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+chrono.workspace = true
+tracing.workspace = true
+sha2.workspace = true

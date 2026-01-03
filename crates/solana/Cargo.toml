@@ -1,0 +1,9 @@
+[package]
+name = "solana"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# Solana dependencies will be added in Phase 7
+# Planned: solana-program, solana-sdk, anchor-lang
+serde.workspace = true

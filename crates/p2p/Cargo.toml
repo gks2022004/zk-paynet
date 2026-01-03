@@ -1,0 +1,20 @@
+[package]
+name = "p2p"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+crypto = { path = "../crypto" }
+protocol = { path = "../protocol" }
+tokio.workspace = true
+quinn.workspace = true
+rustls.workspace = true
+serde.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+futures.workspace = true
+async-trait = "0.1"
+rcgen = "0.13"
+ed25519-dalek.workspace = true
+x25519-dalek.workspace = true

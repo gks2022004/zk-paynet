@@ -1,0 +1,9 @@
+[package]
+name = "zk"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# ZK dependencies will be added in Phase 3
+# Planned: ark-ff, ark-ec, ark-groth16, ark-bn254, ark-std
+serde.workspace = true
