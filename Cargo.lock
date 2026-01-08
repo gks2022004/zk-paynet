@@ -481,6 +481,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "channel"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "bincode",
+ "chrono",
+ "crypto",
+ "ed25519-dalek",
+ "hex",
+ "protocol",
+ "rand 0.8.5",
+ "serde",
+ "serde-big-array",
+ "sha2",
+ "thiserror 1.0.69",
+ "tokio",
+ "tracing",
+ "zk",
+]
+
+[[package]]
 name = "chrono"
 version = "0.4.42"
 source = "registry+https://github.com/rust-lang/crates.io-index"

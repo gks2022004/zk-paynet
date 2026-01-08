@@ -1,0 +1,28 @@
+[package]
+name = "channel"
+version.workspace = true
+edition.workspace = true
+description = "Payment channel implementation for ZK-Paynet"
+
+[dependencies]
+# Workspace crates
+crypto = { path = "../crypto" }
+protocol = { path = "../protocol" }
+zk = { path = "../zk" }
+
+# Core dependencies
+serde.workspace = true
+serde-big-array = "0.5"
+bincode.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+rand.workspace = true
+sha2.workspace = true
+hex.workspace = true
+chrono.workspace = true
+tracing.workspace = true
+ed25519-dalek.workspace = true
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["test-util", "macros"] }

@@ -5,6 +5,7 @@ members = [
     "crates/zk",
     "crates/protocol",
     "crates/relay",
+    "crates/channel",
     "crates/cli",
     "crates/solana",
 ]

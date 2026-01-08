@@ -42,6 +42,11 @@ impl NodeId {
         hex::encode(self.0)
     }
 
+    /// Short hex representation (first 8 chars)
+    pub fn short_hex(&self) -> String {
+        hex::encode(&self.0[..4])
+    }
+
     /// Decode from hex string
     pub fn from_hex(s: &str) -> Result<Self> {
         let bytes = hex::decode(s).context("invalid hex")?;
@@ -137,6 +142,11 @@ impl Identity {
 
     /// Get Ed25519 public key (for handshake)
     pub fn ed25519_public_key(&self) -> &VerifyingKey {
+        &self.ed25519_verifying_key
+    }
+
+    /// Alias for ed25519_public_key (compatibility)
+    pub fn verifying_key(&self) -> &VerifyingKey {
         &self.ed25519_verifying_key
     }
 
